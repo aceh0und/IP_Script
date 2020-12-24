@@ -10,6 +10,7 @@ import time
 # supply IP Address + Subnet (255.255.255.252) or CID Notation /24
 
 user_input = input( "Please enter a Private IP address range: \n examples: \n 10.0.0.0 - 10.255.255.255 \n 172.16.0.0 - 172.31.255.255 \n 192.168.0.0 - 192.168.255.255 \n\n IP Address Range: \t" )
+
 print( " You entered: \t\t" + user_input + "\n\n")
 
 # Add if/else statement here to output the wrong typed output that doesn't match the examples.
@@ -32,7 +33,14 @@ else:
     print("ip is down")
 '''
 
-
+'''
+Apply read scrolling text to script in order to have a "load type screen" to allow process to be run in the back and then outputted afterwards.
+import time
+string = 'hello world'
+for char in string:
+    print char
+    time.sleep(.25)
+'''
 
 
 '''
