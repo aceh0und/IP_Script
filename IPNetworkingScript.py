@@ -45,6 +45,10 @@ if "100% packet loss" in subOutput:
     print("Ip is down")
 else:
     print("Ip is up")
-
+#  Adding note, because I tested the script for "windows option 1", a random IP that was down, still shows IP is up after it request timed out.
+#  Instead of 100% packet loss, it should be a 2nd if/else statment I think.
+#  If request time out "IP is Down" | Windows reports "Request timed out" rather than 100% packet loss.
+#  If TTL="x" "IP is UP"
+#  Great job though, I woke up and was so curious to see what you got done, I jump on and pulled the files and immedately started testing it!
 
 
