@@ -41,10 +41,11 @@ subOutput = str(subOutput)
 print(subOutput)
 
 
-if "100% packet loss" in subOutput:
+if "100% packet loss" or "Request timed out" in subOutput:
     print("Ip is down")
-else:
-    print("Ip is up")
+elif "ttl" in subOutput:
+    print("ip is up")
+
 #  Adding note, because I tested the script for "windows option 1", a random IP that was down, still shows IP is up after it request timed out.
 #  Instead of 100% packet loss, it should be a 2nd if/else statment I think.
 #  If request time out "IP is Down" | Windows reports "Request timed out" rather than 100% packet loss.
