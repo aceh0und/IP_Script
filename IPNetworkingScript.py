@@ -12,8 +12,9 @@ for ip in alive:
     print(ip + " is alive") ''' 
 
 inputUserIP = input("Enter an IP address to ping:\t")
+inputUserPacket = input("How many packets would you like to send?\n")
 
-subInput = "ping -n 1 " + inputUserIP 
+subInput = "ping -n " + inputUserPacket + " " + inputUserIP 
 # Change subInput so that the user can input a number they would like rather than use 1.  :)
 
 subOutput = subprocess.getoutput(subInput)
@@ -23,10 +24,10 @@ subOutput = str(subOutput)
 print(subOutput)
 
 
-if "ttl" in subOutput:
+if "ttl" or "TTL" in subOutput:
     print("ip is up")
 else:
-    print("ip is down")
+    print("Ip is down")
 
 
 
