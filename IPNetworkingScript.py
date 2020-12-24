@@ -13,7 +13,7 @@ for ip in alive:
 
 inputUserIP = input("Enter an IP address to ping:\t")
 
-subInput = "ping -n1 " + inputUserIP 
+subInput = "ping -n 1 " + inputUserIP 
 
 subOutput = subprocess.getoutput(subInput)
 subOutput = str(subOutput)
