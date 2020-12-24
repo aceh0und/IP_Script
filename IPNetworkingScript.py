@@ -1,14 +1,8 @@
 #!/usr/bin/env python
-#caption = "Hello, World!";
-#print( caption );
-
-# Comment type 1
-'''
-Comment Type 2
-'''
 
 '''
 Project 1 Network Ping Script.
+IPNetworkingScript - Created By Ace & Akuma
 '''
 import subprocess
 import ipaddress
