@@ -25,7 +25,12 @@ print( " You entered: \t\t" + user_input )
 
 
 
-
+'''
+if "ttl" in subOutput:
+    print("ip is up")
+else:
+    print("ip is down")
+'''
 
 
 
