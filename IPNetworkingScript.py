@@ -52,7 +52,9 @@ Windows Pings:
 Linux Pings:
 
 MacOS Pings:
--c count    
+-c count        Stop after sending (and receiving) count ECHO_RESPONSE packets.  If this option is not specified, ping will operate until interrupted.  If this option is specified in conjuction with ping sweeps, each sweep will consist of count packets.
+-m ttl          Set the IP Time To Live for outgoing packets.  If not specified, the kernel uses the value of the net.inet.ip.ttl MIB variable.
+-o              Exit succcessfully after receiving one reply packet.
 
 '''
 
