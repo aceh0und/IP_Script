@@ -10,11 +10,11 @@ import ipaddress
 import time
 
 user_input = input( "Please enter a Private IP address range: \n examples: \n 10.0.0.0 - 10.255.255.255 \n 172.16.0.0 - 172.31.255.255 \n 192.168.0.0 - 192.168.255.255 \n\n IP Address Range: \t" )
-print( " You entered: \t\t" + user_input )
+print( " You entered: \t\t" + user_input + "\n\n")
 
 # Add if/else statement here to output the wrong typed output that doesn't match the examples.
 
-user_input = input( "\n\n Please enter a CIDR or Subnet Mask Address for Network: \n examples: \n CIDR Notation: /1 - /32 \n Subnet Mask: A.B.C.D \n\n CIDR or Subnet Mask: \t" )
+user_input = input( "Please enter a CIDR or Subnet Mask Address for Network: \n examples: \n CIDR Notation: /1 - /32 \n Subnet Mask: A.B.C.D \n\n CIDR or Subnet Mask: \t" )
 print( " You entered: \t\t" + user_input )
 
 # Add if/else statement here to output the wrong typed output that doesn't match the examples.
