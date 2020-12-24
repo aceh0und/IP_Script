@@ -15,8 +15,8 @@ import ipaddress
 # supply IP Address + Subnet (255.255.255.252) or CID Notation /24
 import time
 
-user_input = input( "Please enter a Private IP address range: \n examples: \n 10.0.0.0 - 10.255.255.255 \n 172.16.0.0 - 172.31.255.255 \n 192.168.0.0 - 192.168.255.255 \n\n IP Address Range: \t" );
-print( "You entered: \n\t" + user_input );
+user_input = input( "Please enter a Private IP address range: \n examples: \n 10.0.0.0 - 10.255.255.255 \n 172.16.0.0 - 172.31.255.255 \n 192.168.0.0 - 192.168.255.255 \n\n IP Address Range: \t" )
+print( "You entered: \n\t" + user_input )
 
 
 
@@ -68,5 +68,5 @@ def get_info(  ): #{
 
 #get_info{};
 
-print("This is outside the function!");
+print("This is outside the function!")
 '''
