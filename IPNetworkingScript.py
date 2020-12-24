@@ -11,7 +11,11 @@ for i in subnet.hosts():
 for ip in alive:
     print(ip + " is alive") ''' 
 
-subOutput = subprocess.getoutput("ping -c2 192.168.1.1")
+inputUserIP = input("Enter an IP address to ping:\t")
+
+subInput = "ping -c1 " + inputUserIP 
+
+subOutput = subprocess.getoutput(subInput)
 subOutput = str(subOutput)
 
 
