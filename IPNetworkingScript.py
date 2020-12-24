@@ -52,6 +52,7 @@ Windows Pings:
 Linux Pings:
 
 MacOS Pings:
+-c count    
 
 '''
 
